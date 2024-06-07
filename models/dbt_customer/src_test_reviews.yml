@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: HOSTS
+    columns:
+      - name: ID
+        tests:
+          - not_null
+          - unique
+      - name: IS_SUPERHOST
+        tests:
+          - accepted_values:
+              values:
+                - "f"
+                - "t"
