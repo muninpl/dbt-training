@@ -1,0 +1,1 @@
+select {{dbt_utils.generate_surrogate_key(['ID','NAME','HOST_ID'])}},LISTING_URL,name,price from {{ ref('LISTMERGE') }}x
