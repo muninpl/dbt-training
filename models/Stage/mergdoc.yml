@@ -1,0 +1,6 @@
+version: 2
+models:
+  - name: LISTMERGE
+    columns:
+      - name: sentiment
+        description: '{ { doc("listdoc") } }'
