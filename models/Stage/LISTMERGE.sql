@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
 select 
 --From Listings
 L.ID, L.LISTING_URL, L.NAME, L.ROOM_TYPE, L.MINIMUM_NIGHTS, L.HOST_ID, L.PRICE,
