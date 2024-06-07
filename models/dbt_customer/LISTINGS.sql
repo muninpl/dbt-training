@@ -1,1 +1,1 @@
-select * from AIRBNB.RAW.RAW_LISTINGS
+select * from {{ source('dbt_customer', 'raw_listings') }}
